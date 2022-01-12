@@ -1,9 +1,11 @@
-/* *{
+*{
     box-sizing: border-box;
     margin: 0px;
-} */
+    padding: 0;
+}
 
 html, body{
+    box-sizing: border-box
     margin: 0;
     padding: 0;
     
@@ -189,7 +191,91 @@ a{
 
 /* FORMATOS DEL FOOTER */
 
-.futa{
+/* .futa{
    height: 200px;
+} */
+.futer{
+    width: 100%;
+    background-color: rgb(207, 195, 195);
 }
 
+.futer .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+
+.futer .grupo1 .box figure{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.futer .grupo1 .box figure img{
+    width: 200px;
+    /* esta imagen no esta tan buena */
+}
+
+.futer .grupo1 .box h2{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+    
+}
+
+.futer .grupo1 .box p{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 15px;
+    
+}
+
+.futer .grupo1 .redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color:;
+    margin-right: 5px;
+    background-color: ;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.futer .grupo1 .redes a:hover{
+    transform: translateY(-5px);
+}
+
+.futer .grupo2{
+    background-color: rgb(189, 172, 172) ;
+    padding: 15px 10px;
+    text-align: center;
+    color:black ;
+
+}
+
+.futer .grupo2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .futer .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    
+    } 
+}
+.futer .redes img{
+    height: 30px;
+}
