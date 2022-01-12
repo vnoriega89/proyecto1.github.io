@@ -9,66 +9,93 @@
 </head>
 <body>
     <header>
-        <h1 id="titulo">Nuestros Residuos</h1>
+        <nav class="desktop-menu">
+            <!-- <img src="img/" alt=""> -->
+            <ul>
+                <li>GALERIA</li>
+                <li>ACERCA DE</li>
+                <li>MISION</li>
+                <li>CONTACTO</li>
+                <li>INICIAR SESION</li>
+            </ul>
+        </nav>
+        <nav class="mobile-menu">
+            <input class="checkbox" id="hamburguesa"/>
+            <label for="hamburguesa">
+                <img height="20px" src="img/incono-hamburguesa.png" alt="burguer">
+            </label>
+            
+            <div class="nav-menu-movil">
+                <div>GALERIA</div>
+                <div>ACERCA DE</div>
+                <div>MISION</div>
+                <div>CONTACTO</div>
+            </div>
+        </nav>
     </header>
 <!--SECCI[ON DEL JUMBOTRON] -->
   
-    <div>
-        <jumbotron class="jumbo">
-            <div class="left">
-                <h5>20% de Descuento</h5>
-                <h1>Este es mi product genial</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi nam et. Voluptate ipsum illum id dolorem mollitia modi voluptatibus.</p>
-                <div class="mail">
-                    <input class="input" type="mail" placeholder="mail@reciclo.com">
-                    <button class="button">Enviar</button>
-                </div>
+    <jumbotron class="jumbo">
+        <div class="left">
+            <h5>20% de Descuento</h5>
+            <h1>Este es mi product genial</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi nam et. Voluptate ipsum illum id dolorem mollitia modi voluptatibus.</p>
+            <div class="mail">
+                <input class="input" type="mail" placeholder="mail@reciclo.com">
+                <button class="button">Enviar</button>
             </div>
-            <img src="img/botella1.jpg" alt=""> 
-        <jumbotron/> 
-    </div>
-
-<!-- SECCION DEL MOVIMIENTO LA GALERIA -->
-    <div>
-        <section>
-            <h1 class="title">Nosotros</h1>
-            <div class="container">
-                <div class="card">
-                    <img class="img" src="img/botella1.jpg" alt="">
-                    <h4>Nuestros Problemas</h4>
-                    <p class="parrafo">Entendemos la problemAtica de los residuos a profundidad, nos ponemos manos a la obra y buscamos soluciones.</p>
-                    <a href="">Ver Detalles</a>
-                </div>
-                <div class="card">
-                    <img class="img" src="img/tachos.jpg" alt="">
-                    <h4>Nuestras Soluciones</h4>
-                    <p class="parrafo">Pre-diseNadas o hechas a tu medida. Nuestro Exito se basa en nuestra experiencia, un excelente equipo de I+D y el compromiso que tU tengas.</p>
-                    <a href="">Ver Detalles</a>
-                </div>
-                <div class="card">
-                    <img class="img" src="img/cartones.jpg" alt="">
-                    <h4>Nuestros productos</h4>
-                    <p class="parrafo">Tus soluciones son insumos para otras industrias. Encuentra un gran sustituto de materia prima vigren, a menor costo.</p>
-                    <a href="">Ver Detalles</a>
-                </div>
-            </div>
-    </section>
-    </div>  
-
-    <div>
-        <div class="seccion2">
-            <div class="left">
-                <h5>Nuestros socios en esta aventura:</h5>
-                <h1>HOL HOL HOLA FYGHJSKADF </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi nam et. Voluptate ipsum illum id dolorem mollitia modi voluptatibus.</p>
-                <div class="mail">
-                    <input class="input" type="mail" placeholder="mail@reciclo.com">
-                    <button class="button">Enviar</button>
-                </div>
-            </div>
-            <img src="img/botella1.jpg" alt="">  
         </div>
-    </div>   
+        <img src="img/botella0.jpg" alt=""> 
+    </jumbotron>
+    
+
+<!-- SECCION DE LA GALERIA -->
+
+    <section>
+        <h1 class="title">Nosotros</h1>
+        <div class="container">
+            <div class="card">
+                <img src="img/botella1.jpg" alt="">
+                <h4>Nuestros Problemas</h4>
+                <p class="parrafo">Entendemos la problemAtica de los residuos a profundidad, nos ponemos manos a la obra y buscamos soluciones.</p>
+                <a href="">Ver Detalles</a>
+            </div>
+            <div class="card">
+                <img src="img/tachos.jpg" alt="">
+                <h4>Nuestras Soluciones</h4>
+                <p class="parrafo">Pre-diseNadas o hechas a tu medida. Nuestro Exito se basa en nuestra experiencia, un excelente equipo de I+D y el compromiso que tU tengas.</p>
+                <a href="">Ver Detalles</a>
+            </div>
+            <div class="card">
+                <img src="img/cartones.jpg" alt="">
+                <h4>Nuestros productos</h4>
+                <p class="parrafo">Tus soluciones son insumos para otras industrias. Encuentra un gran sustituto de materia prima vigren, a menor costo.</p>
+                <a href="">Ver Detalles</a>
+            </div>
+        </div>
+    </section>
+      
+
+
+    <div class="seccion2">
+        <div class="left">
+            <h5>Nuestros socios en esta aventura:</h5>
+            <h1>HOL HOL HOLA FYGHJSKADF </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi nam et. Voluptate ipsum illum id dolorem mollitia modi voluptatibus.</p>
+            <div class="mail">
+                <input class="input" type="mail" placeholder="mail@reciclo.com">
+                <button class="button">Enviar</button>
+            </div>
+        </div>
+        <img src="img/botella1.jpg" alt="">  
+    </div>
+    
+
+    <footer class="futa">
+        <a href="#titulo">ir arriba</a>
+        <a href="mailto:victor.noriegar@gmail.com">victor.noriegar@gmail.com</a>
+        <p>Copyright 2021</p>
+    </footer>
     
 </body>
 </html>
