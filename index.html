@@ -10,11 +10,11 @@
 <body>
     <header>
         <nav class="desktop-menu">
-            <!-- <img src="img/" alt=""> -->
             <ul>
-                <li>GALERIA</li>
-                <li>ACERCA DE</li>
-                <li>MISION</li>
+                <li><img src="img/logoreciclapp.png" alt=""></li>
+                <li>¿QUIÉNES SOMOS?</li>
+                <li>MISIÓN</li>
+                <li>GALERÍA</li>
                 <li>CONTACTO</li>
                 <li>INICIAR SESION</li>
             </ul>
@@ -35,13 +35,13 @@
     </header>
 <!--SECCI[ON DEL JUMBOTRON] -->
   
-    <jumbotron class="jumbo">
+    <jumbotron id="jumbotron" class="jumbo">
         <div class="left">
-            <h5>20% de Descuento</h5>
-            <h1>Este es mi product genial</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi nam et. Voluptate ipsum illum id dolorem mollitia modi voluptatibus.</p>
+            <h5>El planeta te necesita...</h5>
+            <h1>Forma parte del cambio</h1>
+            <p> En Reciclapp estamos comprometidos con el medio ambiente, déjanos tu correo y te mantendremos al tanto de nuestos proyectos y novedades.</p>
             <div class="mail">
-                <input class="input" type="mail" placeholder="mail@reciclo.com">
+                <input class="input" type="mail" placeholder="mail@mail.com">
                 <button class="button">Enviar</button>
             </div>
         </div>
@@ -50,44 +50,48 @@
     
 
 <!-- SECCION DE LA GALERIA -->
-
-    <section>
-        <h1 class="title">Nosotros</h1>
+    
+    <section id="container">
+        <h1 class="title">Nuestros Servicios</h1>
         <div class="container">
             <div class="card">
                 <img src="img/botella1.jpg" alt="">
                 <h4>Nuestros Problemas</h4>
-                <p class="parrafo">Entendemos la problemAtica de los residuos a profundidad, nos ponemos manos a la obra y buscamos soluciones.</p>
+                <p class="parrafo">Entendemos la problemática de los residuos a profundidad, nos ponemos manos a la obra y buscamos soluciones.</p>
                 <a href="">Ver Detalles</a>
             </div>
             <div class="card">
                 <img src="img/tachos.jpg" alt="">
                 <h4>Nuestras Soluciones</h4>
-                <p class="parrafo">Pre-diseNadas o hechas a tu medida. Nuestro Exito se basa en nuestra experiencia, un excelente equipo de I+D y el compromiso que tU tengas.</p>
+                <p class="parrafo">Pre-diseñadas o hechas a tu medida. Nuestro éxito se basa en nuestra experiencia, un excelente equipo de I+D y el compromiso que tú tengas.</p>
                 <a href="">Ver Detalles</a>
             </div>
             <div class="card">
                 <img src="img/cartones.jpg" alt="">
                 <h4>Nuestros productos</h4>
                 <p class="parrafo">Tus soluciones son insumos para otras industrias. Encuentra un gran sustituto de materia prima vigren, a menor costo.</p>
-                <a href="">Ver Detalles</a>
+                <a href="">Ver Detalles</a> <!--NO SE COMO ALINEARLO EN LA BASE-->
             </div>
         </div>
     </section>
       
 
 
-    <div class="seccion2">
-        <div class="left">
-            <h5>Nuestros socios en esta aventura:</h5>
-            <h1>HOL HOL HOLA FYGHJSKADF </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi nam et. Voluptate ipsum illum id dolorem mollitia modi voluptatibus.</p>
-            <div class="mail">
-                <input class="input" type="mail" placeholder="mail@reciclo.com">
-                <button class="button">Enviar</button>
+    <div id="clientes" class="seccion2">
+        <div class="left2">
+            <h1>NUESTROS SOCIOS EN ESTA AVENTURA:</h1>
+            <p>Estas empresas confiaron en nosotros y están formando parte del cambio:</p>
+            <div>
+                <img src="img/cliente1.svg" alt="">
+                <img src="img/cliente2.svg" alt="">
+                <img src="img/cliente3.svg" alt="">
+                <img src="img/cliente4.svg" alt="">
+                <img src="img/cliente5.svg" alt="">
+                <img src="img/cliente6.svg" alt="">
             </div>
+
+
         </div>
-        <img src="img/botella1.jpg" alt="">  
     </div>
     
 
@@ -104,12 +108,16 @@
                 </figure>
             </div>
             <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, saepe?</P>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestiae!</p>
+                <h2>MAPA DEL SITIO</h2>
+                <a class="linkfuter" href="#jumbotron">INICIO</a>
+                <a class="linkfuter" href="#container">NUESTROS SERVICIOS</a>
+                <a class="linkfuter" href="#clientes">NUESTROS CLIENTES</a>
+                <a class="linkfuter" href="#">MISIÓN</a>
+                <a class="linkfuter" href="#">GALERíA</a>
+                <a class="linkfuter" href="#">CONTACTO</a>
             </div>
             <div class="box">
-                <h2>SIGUENOS</h2>
+                <h2>SíGUENOS</h2>
                 <div class="redes">
                     <a href="#" class="facebook">
                         <img src="img/logofacebook.svg" alt="">
@@ -127,7 +135,7 @@
             </div>
         </div>
         <div class="grupo2">
-            <small>&copy; 2021 <b>Triciclo Perú</b> - Todos los Derechos Reservados.
+            <small>&copy; 2022 <b>Reciclapp Perú</b> - Todos los Derechos Reservados.
             </small>
         </div>
     </footer>

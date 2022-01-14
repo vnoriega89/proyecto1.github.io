@@ -18,49 +18,67 @@ body{
 }
 
 /* FORMATO NAV BAR */
+/* .desktop-menu{
+    display: flex;
+} */
+
+.desktop-menu img{
+    height: 30px;
+
+}
 
 .desktop-menu li {
     list-style-type: none;
     cursor: pointer;
-    
-}
+    font-weight: 600;
 
+}
 .desktop-menu ul {
-    background-color: rgb(13, 90, 126);
-    color: white;
+    background-color: rgb(95, 171, 206);
+    color: black;
     display: flex;
     justify-content: space-around;
-    padding:20px;
+    align-items: center;
+    padding:10px;
     margin: 0;
+    
 }
+.desktop-menu li:hover{
+    transform: translateY(-5px);
 
+}
 .nav-menu-movil div {
     height: 50px;
     display: flex;
     align-items: center;
     padding-left: 20px;
     color: white;
-    background-color: rgb(13, 90, 126);
+    font-weight: 600;
+    background-color: rgb(95, 171, 206);
     cursor: pointer;
-    margin: 0px;
-}
+    margin-top: 0px;
 
+}
 #hamburguesa{
     display: none;
-}
 
+}
 .mobile-menu {
     display: none;
-}
 
-@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 700px) {
     .mobile-menu{
         display: block;
     }
-
     .desktop-menu{
         display: none;
-    }    
+    } 
+    .nav-menu-movil div:hover{
+        color: black;
+    }
+
+    
 }
 
 /* FORMATOS JUMBOTRON */
@@ -68,31 +86,40 @@ body{
 .jumbo {
     display: flex;
     flex-direction: row;
-    background-color: rgb(13, 90, 126);
+    background-color: rgb(95, 171, 206);
+    overflow: hidden;
 }
-/* @media screen and (width: hei { 
-    display: flex;
-    flex-direction: row;
-} */
+@media screen and (max-width: 700px) { 
+    .jumbo{
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
-img{
-    width: 400px;
+.jumbo img{
+    width: 350px;
     align-self:;    
+}
+
+@media screen and (max-width: 700px) { 
+    .jumbo img{
+        align-self: center;
+    }
 }
 
 h5{
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius:15px;
     font-size: 20px;
-    background-color: black;
+    background-color: rgb(6, 41, 94);
     color: white;
 }
 .jumbo h1{
     font-size: 70px;
     color: white;
 }
-p{               
+.jumbo p{               
     font-size: 20px;
     color: white;
     margin-top: 20px;
@@ -109,12 +136,14 @@ p{
     padding: 10px;
     width: 300px;
     margin-right: 10px;
+    font-size: 18px;
 }
 .button {
     padding: 10px;
     font-size: 18px;
     color: white;
-    background-color: green;
+    background-color: rgb(6,41,94);
+    border-radius: 5px;
 }
 
 /* FORMATOS CONTAINER SECTION 1 */
@@ -122,40 +151,40 @@ p{
     text-align: center;
     font-size: 60px;
     font-weight: 300;
-    color: grey;
-    margin-top: 100px;
+    color: rgb(95, 171, 206);
+    margin-top: 20px;
     font-weight: 100;
 
 }
-
 .container{
     width: 100%;
     max-width: 1200px;
-    height: 500px;
+    /* height: 500px; PORQUE SI LE QUITO ESTA LINEA SI MEJORAY NO SE ME PASA PARA ABAJO HACIA EL OTRO DIV EL CONTENIDO CUANDO AJUSTO PANTALLA? */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-}
+    margin-bottom: 20px;
 
+}
 .card{
-    background-color: rgba(200, 243, 189, 0.576);
+    background-color: rgba(95, 171, 206, 0.247);
     width: 330px;
-    height: 430px;
+    height: 380px;
     margin:  20px;
     border-radius: 8px;
     box-shadow:  0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     text-align: center;
     transition: all 0.25s;
+    /* cursor: pointer; */
+
 }
-
-
 .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px  rgba(0, 0, 0, 0.2);
-}
 
+}
 .container div img{
     width: 320px;
     height: 220px;
@@ -166,6 +195,7 @@ p{
 .container div h4{
     font-weight: 600;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .parrafo{
@@ -173,30 +203,59 @@ p{
     font-size: 16px;
     font-weight: 300;
     color: black;
+    margin-top: 10px;
 
 }
 
-a{
+.container a{
     font-weight: 500;
     text-decoration: none;
-    color: skyblue;
+    color: rgb(32, 35, 182);
+    display: flex;
+    justify-content: center;
+
 }
 
 /* FORMATOS CONTAINER SECCION 2  */
 .seccion2{
     display: flex;
     flex-direction: wrap;
-    background-color: rgba(247, 199, 208, 0.652);
+    background-color: rgba(128, 236, 176,0.5);
+
 }
+.seccion2 .left2{
+    padding: 30px;
+    text-align: center;
+
+}
+.seccion2 h1{
+    font-weight: 600;
+    color: green;
+
+}
+.seccion2 p{               
+    font-size: 20px;
+    color:black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.seccion2 .left2 img{
+   height: 200px;
+   margin: 30px;
+    
+}
+.seccion2 .left2 .div{
+    display: flex;
+    flex-direction: wrap;
+}
+
 
 /* FORMATOS DEL FOOTER */
 
-/* .futa{
-   height: 200px;
-} */
 .futer{
     width: 100%;
-    background-color: rgb(207, 195, 195);
+    background-color: rgb(95, 171, 206);
 }
 
 .futer .grupo1{
@@ -238,6 +297,12 @@ a{
     
 }
 
+.futer .grupo1 .linkfuter{
+    display: flex;
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+}
 .futer .grupo1 .redes a{
     display: inline-block;
     text-decoration: none;
@@ -256,7 +321,7 @@ a{
 }
 
 .futer .grupo2{
-    background-color: rgb(189, 172, 172) ;
+    background-color: rgb(157, 206, 216) ;
     padding: 15px 10px;
     text-align: center;
     color:black ;
@@ -267,7 +332,7 @@ a{
     font-size: 15px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
     .futer .grupo1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
